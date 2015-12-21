@@ -1,0 +1,69 @@
+*{
+	transition: all .1s ease-in;
+}
+
+
+.ba-checkers{
+	width:800px;
+	height:800px;
+	margin-left: auto;
+	margin-right: auto;
+
+	border: 3px solid black;
+	background:#fff;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.check1{
+	width:12.5%;
+	height:12.5%;
+	float:left;
+
+}
+
+
+
+.check1:hover:after{
+	transform: translateY(-5px);
+}
+.check1:nth-child(-n+8):nth-child(odd){
+	background:black;
+}
+.check1:nth-child(n+9):nth-child(-n+16):nth-child(even){
+	background:black;
+}
+.check1:nth-child(n+17):nth-child(-n+24):nth-child(odd){
+	background:black;
+}
+.check1:nth-child(n+25):nth-child(-n+32):nth-child(even){
+	background:black;
+}
+.check1:nth-child(n+33):nth-child(-n+40):nth-child(odd){
+	background:black;
+}
+.check1:nth-child(n+41):nth-child(-n+48):nth-child(even){
+	background:black;
+}
+.check1:nth-child(n+49):nth-child(-n+56):nth-child(odd){
+	background:black;
+}
+.check1:nth-child(n+57):nth-child(-n+64):nth-child(even){
+	background:black;
+}
+.check1:nth-child(n+41):nth-child(-n+48):nth-child(even)::after, .check1:nth-child(n+49):nth-child(-n+56):nth-child(odd)::after, .check1:nth-child(n+57):nth-child(-n+64):nth-child(even)::after{
+	content:"";
+	width:75%;
+	height:75%;
+	border-radius:50%;
+	background:red;
+	display: block;
+	margin: 13px 13px;
+}
+.check1:nth-child(-n+8):nth-child(odd)::after, .check1:nth-child(n+9):nth-child(-n+16):nth-child(even)::after, .check1:nth-child(n+17):nth-child(-n+24):nth-child(odd)::after	{
+	content:"";
+	width:75%;
+	height:75%;
+	border-radius:50%;
+	background:white;
+	display: block;
+	margin: 13px 13px;
